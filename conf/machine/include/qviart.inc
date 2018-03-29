@@ -17,10 +17,10 @@ MACHINE_EXTRA_RRECOMMENDS = " \
         gstreamer1.0-libav \
 	splash-bootlogo \
 	enigma2-plugin-extensions-hbbtv-qviart \
+	qviart-opera-browser \
+	qviart-opera-dumpait \
 	bcm \
 "
-#	qviart-opera-browser
-#	qviart-opera-dumpait
 
 EXTRA_IMAGEDEPENDS = " \
 	splash-bootlogo \
