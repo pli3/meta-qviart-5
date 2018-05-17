@@ -9,7 +9,7 @@ DEPENDS = "glib-2.0-native gstreamer1.0 gstreamer1.0-plugins-base libdca ${@bb.u
 
 GSTVERSION = "1.0"
 
-SRC_URI = "git://github.com/pli3/qviart-gstreamer1.0-plugins-dvbmediasink.git;protocol=git \
+SRC_URI = "git://github.com/pli3/xsarius-gstreamer1.0-plugin-dvbmediasink.git;protocol=git \
 "
 
 S = "${WORKDIR}/git"
