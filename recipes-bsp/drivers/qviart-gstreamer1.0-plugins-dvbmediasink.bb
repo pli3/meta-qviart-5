@@ -5,11 +5,11 @@ LICENSE = "GPLv2"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 LIC_FILES_CHKSUM = "file://COPYING;md5=7fbc338309ac38fefcd64b04bb903e34"
 
-DEPENDS = "glib-2.0-native gstreamer1.0 gstreamer1.0-plugins-base libdca ${@bb.utils.contains("BRAND_OEM", "fulan", "fulan-dvb-modules" , "", d)}"
+DEPENDS = "glib-2.0-native gstreamer1.0 gstreamer1.0-plugins-base ${@bb.utils.contains("BRAND_OEM", "fulan", "fulan-dvb-modules" , "", d)}"
 
 GSTVERSION = "1.0"
 
-SRC_URI = "git://github.com/pli3/xsarius-gstreamer1.0-plugin-dvbmediasink.git;protocol=git \
+SRC_URI = "git://github.com/pli3/qviart-gstreamer1.0-plugins-dvbmediasink.git;protocol=git \
 "
 
 S = "${WORKDIR}/git"
