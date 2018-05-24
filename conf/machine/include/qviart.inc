@@ -3,18 +3,11 @@ MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
 
 include conf/machine/include/autoload-filesystems.inc
 
-BBMASK += "meta-xsarius/recipes-bsp/"
-BBMASK += "meta-vuplus/recipes-bsp/"
-
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
 	qviart-dvb-modules-${CHIPSET} \
 	qviart-kernel-params \
 	qviart-shutdown \
-	opera-dumpait \
-	opera-browser-util \
-	enigma2-plugin-extensions-hbbtv \
 	ntfs-3g \
-	bcm \
 "
 
 KERNEL_MODULE_AUTOLOAD += "xfs"
@@ -23,6 +16,10 @@ MACHINE_EXTRA_RRECOMMENDS = " \
 	qviart-gstreamer1.0-plugins-dvbmediasink \
         gstreamer1.0-libav \
 	splash-bootlogo \
+	enigma2-plugin-extensions-hbbtv-qviart \
+	qviart-opera-browser \
+	qviart-opera-dumpait \
+	bcm \
 "
 
 EXTRA_IMAGEDEPENDS = " \
