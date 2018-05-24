@@ -13,6 +13,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
 KERNEL_MODULE_AUTOLOAD += "xfs"
 
 MACHINE_EXTRA_RRECOMMENDS = " \
+	qviart-gstreamer1.0-plugins-dvbmediasink \
 	gstreamer1.0-libav \
 	splash-bootlogo \
 	enigma2-plugin-extensions-hbbtv-qviart \
