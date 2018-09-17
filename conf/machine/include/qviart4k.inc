@@ -1,6 +1,10 @@
 # We know about rtc
 MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
 
+KERNEL_FILE = "oe_kernel.bin"
+ROOTFS_FILE = "rootfs.tar.bz2"
+MTD_BLACK  = "mmcblk0"
+
 TARGET_ARCH = "arm"
 DEFAULTTUNE = "armv7ahf-neon"
 
