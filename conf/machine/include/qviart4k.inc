@@ -3,7 +3,7 @@ MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
 
 KERNEL_FILE = "oe_kernel.bin"
 ROOTFS_FILE = "rootfs.tar.bz2"
-MTD_BLACK  = "mmcblk0"
+MTD_KERNEL = "mmcblk0p1"
 
 TARGET_ARCH = "arm"
 DEFAULTTUNE = "armv7ahf-neon"
