@@ -29,5 +29,4 @@ pkg_postinst_${PN}_append() {
 	chmod 755 $D/etc/init.d/qviart-shutdown
 }
 
-
 PACKAGE_ARCH = "${MACHINE_ARCH}"
