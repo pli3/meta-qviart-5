@@ -22,7 +22,7 @@ do_install() {
 }
 
 pkg_preinst_${PN}_prepend() {
-	chmod -x "$D/etc/init.d/qviart-shutdown"
+	chmod 000 "$D/etc/init.d/qviart-shutdown" || true
 }
 
 pkg_postinst_${PN}_append() {
