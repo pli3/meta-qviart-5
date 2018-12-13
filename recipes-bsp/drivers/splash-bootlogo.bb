@@ -12,11 +12,13 @@ PR = "r0"
 S = "${WORKDIR}/"
 
 SRC_URI = " \
-	${@bb.utils.contains("CHIP", "7252S", "file://${MACHINE}_splash.bmp", " \
 	file://${MACHINE}_splash.bmp \
+"
+
+SRC_URI_append_lunix = " \
 	file://${MACHINE}_splash1.bmp \
 	file://${MACHINE}_splash2.bmp \
-	file://${MACHINE}_splash3.bmp", d)} \
+	file://${MACHINE}_splash3.bmp \
 "
 
 inherit deploy

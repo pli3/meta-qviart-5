@@ -90,4 +90,4 @@ FILES_${PN}-browser = "/usr/bin/browser"
 FILES_${PN} += "${datadir}/webkitgtk-*/resources/error.html \
                 ${datadir}/webkitgtk-*/images \
                 ${datadir}/glib-2.0/schemas"
-#COMPATIBLE_MACHINE = "^(force4)$"
+COMPATIBLE_MACHINE = "^(lunix4k|lunix3-4k)$"
