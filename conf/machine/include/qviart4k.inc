@@ -10,9 +10,9 @@ DEFAULTTUNE = "armv7ahf-neon"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
 	${@bb.utils.contains("GST_VERSION", "1.0", "gstreamer1.0-libav", "gst-ffmpeg", d)} \
+	${@bb.utils.contains("CHIP", "72604", "qviart-dvb-modules-bcm72604", "qviart-dvb-modules-bcm7252s-${MODEL_SIZE}", d)} \
         qviart-initrd-${MACHINE} \
         qviart-shutdown \
-        qviart-dvb-modules-bcm7252s-${MODEL_SIZE} \
 "
 
 KERNEL_MODULE_AUTOLOAD += "xfs"
