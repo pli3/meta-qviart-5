@@ -7,9 +7,9 @@ KV = "4.1.20"
 KV_EXTRA = ""
 PV = "${KV}+${SRCDATE}"
 
-SRCDATE = "20190110"
+SRCDATE = "20190403"
 
-SRC_URI = "http://en3homeftp.net/release/images/oedrivers/bcmlinuxdvb_${CHIP}-${KV}-${SRCDATE}.tar.gz"
+SRC_URI = "http://en3homeftp.net/release/images/oedrivers/bcmlinuxdvb_${CHIP}-${KV}-noproxy-${SRCDATE}.tar.gz"
 
 S = "${WORKDIR}"
 
@@ -32,5 +32,5 @@ do_install() {
 		    echo $i _hwtype=\$hwtypenum >> ${D}/${sysconfdir}/modules-load.d/_${MACHINE}.conf
 		done
 }
-SRC_URI[md5sum] = "02f76f46f913fa1ee7a72b06d28083d0"
-SRC_URI[sha256sum] = "36f91f24c458aa9fb46fe3bddbba49d12329e028bba55f46998c62d17d41f71b"
+SRC_URI[md5sum] = "9ea6bc619dbb0444b896d0228cbd8436"
+SRC_URI[sha256sum] = "eecfc29536daffee989dd5605051adb3699afa7b7a3590fcda085101a1cb7bbe"
