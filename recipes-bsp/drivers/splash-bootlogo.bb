@@ -22,7 +22,6 @@ inherit deploy
 
 do_install() {
 	install -m 0644 ${WORKDIR}/*.bmp ${DEPLOY_DIR_IMAGE}/
-	install -m 0644 ${WORKDIR}/*.bmp ${D}/
 }
 
 do_deploy() {
