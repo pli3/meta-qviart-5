@@ -21,6 +21,7 @@ SRC_URI_append_lunix += " \
 inherit deploy
 
 do_install() {
+	mkdir -p ${DEPLOY_DIR_IMAGE}
 	install -m 0644 ${WORKDIR}/*.bmp ${DEPLOY_DIR_IMAGE}/
 }
 
