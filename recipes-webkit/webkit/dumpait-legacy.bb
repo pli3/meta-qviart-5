@@ -2,7 +2,7 @@ SUMMARY = "dumpait"
 PRIORITY = "required"
 LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
-COMPATIBLE_MACHINE = "^lunix3-4k$"
+COMPATIBLE_MACHINE = "^(lunix3-4k|lunix4k)$"
 
 inherit autotools-brokensep pkgconfig gitpkgv
 
@@ -29,5 +29,3 @@ do_install() {
 FILES_${PN} = "${libdir}/${DESTDIR}/dumpait"
 FILES_${PN}-dbg = "${libdir}/${DESTDIR}/.debug"
 FILES_${PN}-src = "/usr/src"
-
-COMPATIBLE_MACHINE = "^(lunix4k|lunix3-4k)$"

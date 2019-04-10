@@ -2,7 +2,7 @@ SUMMARY = "WebKit web rendering engine for the GTK+ platform"
 HOMEPAGE = "http://www.webkitgtk.org/"
 BUGTRACKER = "http://bugs.webkit.org/"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
-COMPATIBLE_MACHINE = "^lunix3-4k$"
+COMPATIBLE_MACHINE = "^(lunix3-4k|lunix4k)$"
 LICENSE = "BSD & LGPLv2+"
 
 LIC_FILES_CHKSUM = "\
@@ -90,4 +90,3 @@ FILES_${PN}-browser = "/usr/bin/browser"
 FILES_${PN} += "${datadir}/webkitgtk-*/resources/error.html \
                 ${datadir}/webkitgtk-*/images \
                 ${datadir}/glib-2.0/schemas"
-COMPATIBLE_MACHINE = "^(lunix4k|lunix3-4k)$"

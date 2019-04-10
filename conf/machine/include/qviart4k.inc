@@ -1,13 +1,9 @@
 # We know about rtc
 MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
 
-KERNEL_FILE = "oe_kernel.bin"
-ROOTFS_FILE = "rootfs.tar.bz2"
 MTD_KERNEL = "mmcblk0p1"
-
 TARGET_ARCH = "arm"
 DEFAULTTUNE = "armv7ahf-neon"
-
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
 	${@bb.utils.contains("GST_VERSION", "1.0", "gstreamer1.0-libav", "gst-ffmpeg", d)} \
         qviart-initrd-${MACHINE} \
@@ -17,20 +13,18 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
 KERNEL_MODULE_AUTOLOAD += "xfs"
 
 MACHINE_EXTRA_RRECOMMENDS = " \
-	webkit-classic \
-	enigma2-plugin-extensions-hbbtv-webkit \
-	dumpait-legacy \
 	gstreamer1.0-plugin-dvbmediasink \
 	ntfs-3g \
 "
 
 EXTRA_IMAGEDEPENDS += "\
-                   splash-bootlogo \
+	webkit-classic \
+	dumpait-legacy \
+	enigma2-plugin-extensions-hbbtv-webkit \
+        splash-bootlogo \
 "
 
 DVBMEDIASINK_CONFIG = "--with-pcm --with-eac3 --with-amr --with-wmv --with-h265 --with-vb6 --with-vb8 --with-vb9 --with-spark"
-
-PREFERRED_VERSION_linux-qviart = "3.14.28"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-qviart"
 
