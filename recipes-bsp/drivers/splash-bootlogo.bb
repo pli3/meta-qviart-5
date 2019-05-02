@@ -4,6 +4,8 @@ PRIORITY = "required"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 LICENSE = "CLOSED"
 
+COMPATIBLE_MACHINE = "lunix|lunix4k|lunix3_4k"
+
 PV = "1.0"
 PR = "r0"
 
