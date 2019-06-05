@@ -9,8 +9,8 @@ KV = "4.2.1"
 
 inherit kernel machine_kernel_pr
 
-SRC_URI[md5sum] = "48d1c96b3bedcc6a11c34eede6e36bfd"
-SRC_URI[sha256sum] = "ed11d537b1e19d59b132fd643bebc7469bf20e115bdc23e949e2ce14ae53aadc"
+SRC_URI[md5sum] = "421fa4f796f8ca74b300672cff0d3074"
+SRC_URI[sha256sum] = "cff81e142d078688cb861068d21cf8cf70fd9754c710a363dd130e0e0b56ab0c"
 
 LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${KV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
