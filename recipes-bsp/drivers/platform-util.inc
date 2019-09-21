@@ -1,8 +1,6 @@
 SECTION = "base"
 LICENSE = "CLOSED"
 
-PR="${SRCDATE}"
-
 SRC_URI = " \
     http://en3homeftp.net/pub/down/platform-util-${CHIP}.tar.gz \
     file://${INITSCRIPT_NAME}.sysvinit \
