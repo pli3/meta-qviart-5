@@ -5,17 +5,19 @@ LICENSE = "CLOSED"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
+SRCDATE = "20210427"
 KV = "3.14.28"
 KV_EXTRA = ""
 PV = "${KV}+${SRCDATE}"
 
-SRCDATE = "20200203"
+SRC_URI[md5sum] = "08497ecac0dc87214a5059bfa5ec1767"
+SRC_URI[sha256sum] = "fe8fbe9084cc82a517226f99f736ad874269478ce52c13e6988bbd2213a94baf"
 
 # @description : model_size is 200mm and 300mm.
 # ex) bcmlinuxdvb_7252S-200mm-3.14.28-20161130.tar.gz.
 # only 2 case. ( 200mm and 300mm )
 
-SRC_URI = "http://en3homeftp.net/release/images/oedrivers/bcmlinuxdvb_${CHIP}-${MODEL_SIZE}-${KV}-${SRCDATE}.tar.gz"
+SRC_URI = "http://en3homeftp.net/release/images/iqon/bcmlinuxdvb_${CHIP}-${MODEL_SIZE}-${KV}-${SRCDATE}.tar.gz"
 
 S = "${WORKDIR}"
 
@@ -38,6 +40,3 @@ do_install() {
 		    echo $i _hwtype=\$hwtypenum >> ${D}/${sysconfdir}/modules-load.d/_${MACHINE}.conf
 		done
 }
-
-SRC_URI[md5sum] = "83f0ed4e67c5640281b0b0ef0416990b"
-SRC_URI[sha256sum] = "51ec59cd3f7890d38948a2b033414dc0d4864523efb146fe9915d0e122835b5d"

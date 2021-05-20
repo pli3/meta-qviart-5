@@ -5,15 +5,15 @@ LICENSE = "CLOSED"
 
 PACKAGE_ARCH = "${MACHINE}"
 
-SRCDATE = "20200717"
+SRCDATE = "20210427"
 KV = "4.1.20"
 PV = "${KV}+${SRCDATE}"
 PR = "r0"
 
-SRC_URI[md5sum] = "dff8d9800fbc7c978bc6a0c17ce41838"
-SRC_URI[sha256sum] = "a31e45fb03ee2bb22eef8908ce06ce5c5cf303e6c0614a37f5bc6b1effd31ee9"
+SRC_URI[md5sum] = "c533bff63bb37096c039fa6d614f9e09"
+SRC_URI[sha256sum] = "089f7d31acf19164476880fbf1e54c3330956acca85c46da9dc107b6243fca7b"
 
-SRC_URI = "http://en3homeftp.net/release/images/oedrivers/bcmlinuxdvb_72604-${KV}-${SRCDATE}.tar.gz"
+SRC_URI = "http://en3homeftp.net/release/images/iqon/bcmlinuxdvb_72604-${KV}-${SRCDATE}.tar.gz"
 
 S = "${WORKDIR}"
 
