@@ -49,8 +49,14 @@ IMAGE_CMD_tar_prepend = " \
         rm -rf update; \
 "
 
-MACHINE_FEATURES += "alsa usbhost wlan kernelwifi extrakernelwifi 3dtv switchoff osdposition hdmicec"
+MACHINE_FEATURES += "alsa usbhost wlan kernelwifi extrakernelwifi 3dtv switchoff osdposition hdmicec HDMI"
 
 require conf/machine/include/arm/arch-armv7a.inc
 require conf/machine/include/qviart-wifi.inc
 require conf/machine/include/qviart-dvb-usb.inc
+
+BOX_BRAND = "dags"
+
+BLINDSCAN_BINARY = "dags_blindscan"
+
+KERNEL_FILE = "oe_kernel.bin"

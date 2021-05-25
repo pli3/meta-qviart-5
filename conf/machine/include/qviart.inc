@@ -62,8 +62,14 @@ IMAGE_CMD_ubi_append = " \
 	rm -rf update; \
 "
 
-MACHINE_FEATURES += "dvb-c alsa usbhost wlan kernelwifi 3dtv switchoff osdposition hdmicec dvbusb"
+MACHINE_FEATURES += "dvb-c alsa usbhost wlan kernelwifi 3dtv switchoff osdposition hdmicec dvbusb HDMI"
 
 require conf/machine/include/tune-mips32.inc
 require conf/machine/include/qviart-wifi.inc
 require conf/machine/include/qviart-dvb-usb.inc
+
+BOX_BRAND = "dags"
+
+BLINDSCAN_BINARY = "dags_blindscan"
+
+KERNEL_FILE = "oe_kernel.bin"
