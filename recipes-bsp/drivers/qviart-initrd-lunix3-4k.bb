@@ -8,6 +8,8 @@ SRCDATE = "20170801"
 
 SRC_URI = "http://en3homeftp.net/pub/down/vmlinuz-initrd_${MACHINE}_${SRCDATE}.tar.gz"
 
+S = "${WORKDIR}"
+
 FILES_${PN} = "/boot"
 
 INHIBIT_PACKAGE_STRIP = "1"
